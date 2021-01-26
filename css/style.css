@@ -4,7 +4,7 @@
 }
 
 .section .inner {
-    max-width: 980px;
+    max-width: 1080px;
     margin: 0 auto;
     box-sizing: border-box;
     position: relative;
@@ -13,7 +13,7 @@
 
 
 .section .inner li {
-    padding: 34px 24px;
+    padding: 34px 44px;
     height: 700px;
     text-align: center;
     box-sizing: border-box;
