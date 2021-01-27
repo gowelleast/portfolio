@@ -12,19 +12,18 @@
 
 .section .inner {
     max-width: 1080px;
-    margin: 0 auto;
+    margin: 60px auto;
     box-sizing: border-box;
     position: relative;
 }
 
 
-.section .inner ul {
+/* INTRODUCTION */
+.section .inner .introduction {
     box-shadow:  2px 2px 2px 2px rgba(155,155,155);
-    margin-top: 60px;
-    margin-bottom: 60px;
     color: rgba(255,255,255);
 }
-.section .inner li {
+.section .inner .introduction li {
     padding: 34px 44px;
     height: 900px;
     text-align: center;
@@ -32,14 +31,14 @@
     float: left;
     width: 50%; 
 }
-.section .inner li:nth-child(1) {
+.section .inner .introduction li:nth-child(1) {
     background-color: rgba(50,135,220);
 }
 
-.section .inner li:nth-child(2) {
+.section .inner .introduction li:nth-child(2) {
     background-color: rgba(100,165,250);
 }
-.section .inner li h3 {
+.section .inner .introduction li h3 {
     width: 180px;
     padding-bottom: 10px;
     border-bottom: rgba(200,229,230) solid 2px;
@@ -49,14 +48,24 @@
     margin-bottom: 10px;
     margin-top: 40px;
 }
-.section .inner li p {
+.section .inner .introduction li p {
     margin-top: 20px;
     font-size: 20px;
     font-weight: 500;
     text-align: left;
 }
 
-.section .inner .profile {
-    background-color: beige;
+/* PORTFOLIO */
+.section .inner .portfolio {
+    background-color: black;
     height: 800px;
+    transition: 1.5s;
+}
+
+
+/* PROFILE */
+.section .inner .profile {
+    background-color: rgb(187, 240, 192);
+    height: 800px;
+    transition: 1.5s;
 }
