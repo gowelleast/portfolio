@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=], initial-scale=1.0">
@@ -7,10 +8,52 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
     <link rel="stylesheet" href="./css/style.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
+    <script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
     <title>포트폴리오</title>
 </head>
-<body>  
-    <section  class="section">
+
+<body>
+
+
+    <div id="root"></div>
+
+    <script type="text/babel">
+        class App extends React.Component {
+            constructor (props) {
+                super(props)
+                this.state = {
+                    time: new Date()
+                }
+            }
+       
+
+        render () {
+            return <h1>{this.state.time.toLocaleTimeString()}</h1>
+        }
+
+        componentDidMount () {
+            this.timerId = setInterval(() =>{
+                this.setState({
+                    time: new Date()
+                })
+            }, 1000)
+        }
+
+        componentWillUnmount () {
+            clearInterval(this.timerId)
+        }
+    }
+        const container = document.getElementById('root')
+        ReactDOM.render(<App />, container)
+
+    </script>
+
+    <section class="section">
         <div class="inner">
             <ul class="introduction clearfix">
                 <li>
@@ -18,7 +61,7 @@
                     <p data-aos="fade-right">asd</p>
                 </li>
                 <li>
-                    <h3  data-aos="fade-right">What Can&nbsp;I&nbsp;Do</h3>
+                    <h3 data-aos="fade-right">What Can&nbsp;I&nbsp;Do</h3>
                     <p></p>
                 </li>
             </ul>
@@ -27,7 +70,7 @@
     <section class="section">
         <div data-aos="fade-right" class="inner">
             <div class="portfolio clearfix">
-                    
+
             </div>
         </div>
     </section>
@@ -48,4 +91,5 @@
         AOS.init();
     </script>
 </body>
+
 </html>
