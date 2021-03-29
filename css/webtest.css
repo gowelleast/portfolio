@@ -1,0 +1,42 @@
+.stage {
+    overflow: hidden;
+    width: 100vw;
+    height: 75vw;
+    background: #ffff00;
+    position: relative;
+}
+@keyframes moving {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(90vw);
+    }
+}
+.box {
+    width: 100px;
+    height: 100px;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: contain;
+    position: absolute;
+    animation: moving infinite alternate;
+}
+.box:nth-child(1) {
+    left: 5%;
+    bottom: 5%;
+    background: red;
+    animation-duration: 5s;
+}
+.box:nth-child(2) {
+    left: 10%;
+    bottom: 3%;
+    background: blue;
+    animation-duration: 2s;
+}
+.box:nth-child(3) {
+    left: 7%;
+    bottom: 10%;
+    background: green;
+    animation-duration: 7s;
+}

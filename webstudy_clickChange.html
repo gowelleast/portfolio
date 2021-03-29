@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css flex box</title>
+    <style>
+        .container {
+            display: flex;
+            flex-direction: column;
+            height: 60vh;
+            background: gray;
+        }
+        .item {
+            padding: 2em;
+            border: 3px solid black;
+            background: white;
+            cursor: pointer;
+        }
+        .special {
+            background: purple;
+            border: 4px dashed green;
+        }
+    </style>
+    
+</head>
+<body>
+    <div class="container">
+        <div class="item">AA</div>
+        <div class="item">B</div>
+        <div class="item">CCCC</div>
+        <div class="item">D</div>
+        <div class="item">EEE</div>
+    </div>
+    <script>
+        (function() {
+            const test = document.querySelector('.container');
+            
+            function clickHandler(e) {
+                e.target.classList.toggle('special');
+            }
+            
+            test.addEventListener('click', clickHandler);
+        }) ();
+    </script>
+</body>
+</html>

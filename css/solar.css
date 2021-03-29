@@ -1,0 +1,229 @@
+body {
+    height: 1450vw;
+    -webkit-overflow-scrolling: touch;
+    color: #999;
+    background: #050505;
+}
+.world {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    perspective: 1000px;
+}
+.progress-bar-con {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 5px;
+    background: #555;
+    z-index: 100;
+}
+.progress-bar {
+    width: 0;
+    height: 100%;
+    background:  #00a8ff;
+}
+.btn-group {
+    position: sticky;
+    float: right;
+    display: flex;
+    flex-flow: column;
+    top: 2vh;
+    right: 2vw;
+    z-index: 100;
+    width: 5vw;
+    height: 40vh;
+    justify-content: space-between;
+    text-align: center;
+}
+.btn {
+    width: 5vw;
+    height: 2.5vh;
+    border-radius: 0.5vw;
+    font-size: 2vh;
+    line-height: 2.4vh;
+    color: #fff;
+    cursor: pointer;
+}
+.btn:hover {
+    background: rgba(50,50,50,.9);
+}
+.gotoMain {
+    font-size: 1.7vh;
+}
+.gotoSun {
+    background: red;
+}
+.gotoMercury {
+    background: blue;
+}
+.gotoVenus {
+    background: orange;
+}
+.gotoEarth {
+    background: green;
+}
+.gotoMars {
+    background: tomato;
+}
+.gotoJupiter {
+    background: brown;
+}
+.gotoSaturn {
+    background: tan;
+}
+.gotoUranus {
+    background: skyblue;
+}
+.gotoNeptune {
+    background: aqua;
+}
+
+.stage {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    transform-style: preserve-3d;  /* 3d 효과가 자식들에게 잘 보존되도록 익플 지원 안함*/
+}
+.house {
+    width: 100vw;
+    height: 100vh;
+    transform: translateZ(-400vw);
+    transform-style: preserve-3d;
+}
+.wall {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,0.8);
+}
+.wall-left {
+    width: 5200vw;
+    background: url("../img/spacesprite.png") repeat 0 0 / auto 100vh;
+    transform: rotateY(90deg) translateZ(-2600vw);
+}
+.wall-right {
+    width: 5200vw;
+    background: url("../img/spacesprite.png") ; 
+    transform: rotateY(90deg) translateZ(-2500vw);
+}
+/* .wall-bottom {
+    height: 5200vw;
+    transform: rotateX(90deg) translateZ( calc(2600vw - 100vh) );
+} */
+.wall-front-a {
+    transform: translateZ(300vw);
+}
+.wall-front-b {
+    transform: translateZ(50vw);
+}
+.wall-front-c {
+    transform: translateZ(-200vw);
+}
+.wall-front-d {
+    transform: translateZ(-500vw);
+}
+.wall-front-e {
+    transform: translateZ(-800vw);
+}
+.wall-front-f {
+    transform: translateZ(-1100vw);
+}
+.wall-front-g {
+    transform: translateZ(-1400vw);
+}
+.wall-front-h {
+    transform: translateZ(-1700vw);
+}
+.wall-front-i {
+    transform: translateZ(-2000vw);
+}
+.wall-front-j {
+    transform: translateZ(-2300vw);
+}
+.wall-front-k {
+    transform: translateZ(-2600vw);
+}
+.wall-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.wall-img {
+    position: absolute;
+    top: 4vh;
+    left: 4vh;
+}
+.wall-title {
+    margin-top: 8vh;
+    font-size: 10vh;
+    z-index: 100;
+}
+.wall-description {
+    margin-top: 2rem;
+    font-size: 5.5vh;
+    z-index: 100;
+}
+.sun .wall-img {
+    background-image: url("../img/sun.png");
+    background-size: cover;
+    width: 50vh;
+    height: 50vh;
+}
+.mercury .wall-img {
+    background-image: url("../img/mercury.png");
+    background-size: cover;
+    width: 50vh;
+    height: 50vh;
+}
+.venus .wall-img {
+    background-image: url("../img/venus.png");
+    background-size: cover;
+    width: 50vh;
+    height: 50vh;
+}
+.earth .wall-img {
+    background-image: url("../img/earth.png");
+    background-size: cover;
+    width: 50vh;
+    height: 50vh;
+}
+.mars .wall-img {
+    background-image: url("../img/mars.png");
+    background-size: cover;
+    width: 50vh;
+    height: 50vh;
+}
+.jupiter .wall-img {
+    background-image: url("../img/jupiter.png");
+    background-size: cover;
+    width: 50vh;
+    height: 50vh;
+}
+.saturn .wall-img {
+    background-image: url("../img/saturn.png");
+    background-size: cover;
+    width: 50vh;
+    height: 50vh;
+}
+.uranus .wall-img {
+    background-image: url("../img/uranus.png");
+    background-size: cover;
+    width: 50vh;
+    height: 50vh;
+}
+.neptune .wall-img {
+    background-image: url("../img/neptune.png");
+    background-size: cover;
+    width: 50vh;
+    height: 50vh;
+}

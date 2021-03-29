@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solar System</title>
+
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/solar.css">
+    <link rel="icon" href="./img/solarSystemFavicon.svg">
+
+    <script src="./js/solar.js" defer></script>    
+    <style>
+        html {
+            height: 100%;
+        }
+        body {
+            min-height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="progress-bar-con">
+        <div class="progress-bar"></div>
+    </div>
+    <div class="btn-group">
+        <div class="btn gotoMain">즉시 이동</div>
+        <div class="btn gotoSun">태양</div>
+        <div class="btn gotoMercury">수</div>
+        <div class="btn gotoVenus">금</div>
+        <div class="btn gotoEarth">지</div>
+        <div class="btn gotoMars">화</div>
+        <div class="btn gotoJupiter">목</div>
+        <div class="btn gotoSaturn">토</div>
+        <div class="btn gotoUranus">해</div>
+        <div class="btn gotoNeptune">명</div>
+    </div>
+    <div class="world">
+        <div class="stage">
+            <div class="house">
+                <section class="wall wall-left"></section>
+                <section class="wall wall-right"></section>
+                <!-- <section class="wall wall-bottom"></section> -->
+                <section class="wall wall-front wall-front-a">
+                    <div class="wall-content">
+                        <h2 class="wall-title">
+                            태양계에 대해서 알아보자
+                        </h2>
+                        <h4 class="wall-description">스크롤 조작과 오른쪽 버튼으로 움직일수 있어요!</h3>
+                    </div>
+                </section>
+                <section class="wall wall-front wall-front-b">
+                    <div class="wall-content sun">
+                        <div class="wall-img"></div>
+                        <h2 class="wall-title">태양 Sun</h2>
+                        <div class="wall-description">태양은 태양계 중심에 있으며 
+                            <br>지구에서 가장 가까운 항성이다.
+                            <br>지름 : 1,392,684 ± 130 km (지구의 109배)
+                            <br>질량 : 1.98855 × 10^30 kg (지구의 33만 배)
+                        </div>
+                    </div> 
+                </section>
+                <section class="wall wall-front wall-front-c">
+                    <div class="wall-content mercury">
+                        <div class="wall-img"></div>
+                        <h2 class="wall-title">수성 Mercury</h2>
+                        <div class="wall-description">수성은 지구형 행성 중 하나로, 
+                            <br>표면은 암석으로 이루어져 있다.
+                            <br>지름 : 4879.4 km
+                            <br>질량 : 3.023 × 10^23 kg
+                        </div>
+                    </div> 
+                </section>
+                <section class="wall wall-front wall-front-d">
+                    <div class="wall-content venus">
+                        <div class="wall-img"></div>
+                        <h2 class="wall-title">금성 Venus</h2>
+                        <div class="wall-description">태양 주위를 224일 주기로 돌고 있으며, 
+                            <br>달에 이어서 밤하늘에서 두 번째로 밝은 천체이다.
+                            <br>지름 : 12,103.7 km
+                            <br>질량 : 4.869 × 10^24 kg
+                        </div>
+                    </div> 
+                </section>
+                <section class="wall wall-front wall-front-e">
+                    <div class="wall-content earth">
+                        <div class="wall-img"></div>
+                        <h2 class="wall-title">지구 Earth</h2>
+                        <div class="wall-description">얇은 대기층으로 둘러싸여 있고, 
+                            <br>지금까지 발견된 지구형 행성 가운데 가장 크다. 
+                            <br>지름 : 12,756.25 km
+                            <br>질량 : 5.9736 x 10^24 kg
+                        </div>
+                    </div> 
+                </section>
+                <section class="wall wall-front wall-front-f">
+                    <div class="wall-content mars">
+                        <div class="wall-img"></div>
+                        <h2 class="wall-title">화성 Mars</h2>
+                        <div class="wall-description">화성에는 태양계에서 가장 높은 산인 올림푸스 화산이 있으며, 
+                            <br>역시 태양계에서 가장 큰 계곡인 매리너스 협곡과 극관을 가지고 있다.
+                            <br>지름 : 6779.0±0.2 km
+                            <br>질량 : 6.4174 × 10^23 kg
+                        </div>
+                    </div> 
+                </section>
+                <section class="wall wall-front wall-front-g">
+                    <div class="wall-content jupiter">
+                        <div class="wall-img"></div>
+                        <h2 class="wall-title">목성 Jupiter</h2>
+                        <div class="wall-description"> 태양계의 가장 큰 행성으로, 
+                            <br>태양의 질량의 1,000분의 1배에 달하는 거대행성이다.
+                            <br>지름 : 142,984 km
+                            <br>질량 : 1.899 × 10^27 kg 
+                        </div>
+                    </div> 
+                </section>
+                <section class="wall wall-front wall-front-h">
+                    <div class="wall-content saturn">
+                        <div class="wall-img"></div>
+                        <h2 class="wall-title">토성 Saturn</h2>
+                        <div class="wall-description">태양계 내 행성 중에서 두번째로 큰 크기를 가지고 있으며,
+                            <br>토성은 크고 아름다운 고리를 가지고 있다.
+                            <br>지름 : 120,536 km
+                            <br>질량 : 5.6846 × 10^26 kg
+                        </div>
+                    </div> 
+                </section>
+                <section class="wall wall-front wall-front-i">
+                    <div class="wall-content uranus">
+                        <div class="wall-img"></div>
+                        <h2 class="wall-title">천왕성 Uranus</h2>
+                        <div class="wall-description">해왕성과 매우 닮은 행성으로,
+                            <br>신기하게도 태양계의 행성들 중 유일하게 옆으로 누워서 자전한다.
+                            <br>지름 : 51,118 km
+                            <br>질량 : 8.6832 × 10^25 kg
+                        </div>
+                    </div> 
+                </section>
+                <section class="wall wall-front wall-front-j">
+                    <div class="wall-content neptune">
+                        <div class="wall-img"></div>
+                        <h2 class="wall-title">해왕성 Neptune</h2>
+                        <div class="wall-description">해왕성은 명왕성이 행성 분류에서 제외된 이후 
+                            <br>태양계의 마지막 행성으로 인정되고 있는 여덟 번째 행성이다.
+                            <br>지름 : 48,681 km
+                            <br>질량 : 1.02413 × 10^26 kg
+                        </div>
+                    </div> 
+                </section>
+                <section class="wall wall-front wall-front-k">
+                    <div class="wall-content">
+                        <h2 class="wall-title">본 사이트는 상업적 목적이 아닌</h2>
+                        <h4 class="wall-description">개인 포트폴리오 사이트로 제작되었습니다.</h3>
+                    </div> 
+                </section>
+            </div>
+        </div>
+
+        <!-- 캐릭터 위치 -->
+    </div>
+</body>
+</html>
