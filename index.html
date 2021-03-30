@@ -1,95 +1,89 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=], initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
-    <link rel="stylesheet" href="./css/style.css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/portfolio.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;900&display=swap" rel="stylesheet">
+    <script src="./js/portfolio.js" defer></script>
+    <title>Portfolio</title>
 
-
-    <script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>
-    <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
-    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
-
-    <title>포트폴리오</title>
 </head>
 
 <body>
-
-
-    <div id="root"></div>
-
-    <script type="text/babel">
-        class App extends React.Component {
-            constructor (props) {
-                super(props)
-                this.state = {
-                    time: new Date()
-                }
-            }
-       
-
-        render () {
-            return <h1>{this.state.time.toLocaleTimeString()}</h1>
-        }
-
-        componentDidMount () {
-            this.timerId = setInterval(() =>{
-                this.setState({
-                    time: new Date()
-                })
-            }, 1000)
-        }
-
-        componentWillUnmount () {
-            clearInterval(this.timerId)
-        }
-    }
-        const container = document.getElementById('root')
-        ReactDOM.render(<App />, container)
-
-    </script>
-
+    <nav class="global-nav">
+        <h2 class="name">Hyeongdong Kim</h2>
+        <ul class="list">
+            <li>Home<div class="current-section"></div>
+            </li>
+            <li>About Me<div class="current-section"></div>
+            </li>
+            <li>What Can I Do<div class="current-section"></div>
+            </li>
+            <li>Portfolio<div class="current-section"></div>
+            </li>
+        </ul>
+    </nav>
     <section class="section">
-        <div class="inner">
-            <ul class="introduction clearfix">
-                <li>
-                    <h3 data-aos="zoom-in-right">About<br>Me</h3>
-                    <p data-aos="fade-right">asd</p>
-                </li>
-                <li>
-                    <h3 data-aos="fade-right">What Can&nbsp;I&nbsp;Do</h3>
-                    <p></p>
-                </li>
-            </ul>
-        </div>
-    </section>
-    <section class="section">
-        <div data-aos="fade-right" class="inner">
-            <div class="portfolio clearfix">
-
+        <div class="container container-0" id="scroll-section-0">
+            <h1 class="copyright">Copyright © Hyeongdong Kim, All rights reserved</h1>
+            <div class="svg-circle">
+                <svg class="loading-circle">
+                    <circle cx="50%" cy="50%" r="51 "></circle>
+                </svg>
+                <h2 class="circle-center">HD</h2>
             </div>
         </div>
-    </section>
-    <section class="section">
-        <div data-aos="fade-left" class="inner">
-            <div class="profile clearfix">
-
+        <div class="container container-1" id="scroll-section-1">
+            <h1>About me</h1>
+            <div class="intro">
+                <div class="picture"></div>
+                <p>
+                    안녕하세요. <br>
+                    훌륭한 웹 퍼블리셔를 꿈꾸는 김형동입니다.<br>
+                    저는 웹 사이트를 제작할 때 소비자와 생산자 모두에게 <br>실용적인 서비스를 제공하려 노력합니다.<br>
+                    웹 이용자들에게 가장 효율적으로 다가가기 위해서 <br>새로운 기술을 계속해서 공부 중 입니다.<br>
+                </p>
             </div>
+        </div>
+        <div class="container container-2" id="scroll-section-2">
+            <h1>What Can I Do</h1>
+            <div class="grid-container">
+                <div class="html5"></div>
+                <p>HTML5</p>
+                <div class="css3"></div>
+                <p>CSS3<br>
+                반응형 레이아웃</p>
+                <div class="js"></div>
+                <p>Vanilla JavaScript</p>
+                <div class="ps"></div>
+                <p>GTQ 포토샵 1급 보유</p>
+            </div>
+        </div>
+        <div class="container container-3" id="scroll-section-3">
+            <h1>Portfolio</h1>
+            <div class="portfolio-0">
+                <div class="portfolio-0-img"></div>
+                <div class="introduce">
+                    <h2><p>01</p>가상의 브랜드 홈페이지</h2>
+                    <p>패치워크라는 가상의 브랜드의 홈페이지를 반응형 웹페이지입니다.</p>
+                </div>
+            </div>
+            <div class="portfolio-1">
+                <div class="portfolio-1-img"></div>
+                <div class="introduce">
+                    <h2><p>02</p>태양계 학습용 웹페이지</h2>
+                    <p>휠에 반응하여 3D로 움직이고 마우스 커서 위치에 따라 시점이 변하는 웹페이지입니다.</p>
+                </div>
+            </div>
+            <div class="portfolio-2"></div>
         </div>
     </section>
 
-
-
-
-
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
 </body>
 
 </html>
