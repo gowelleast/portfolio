@@ -8,17 +8,19 @@ html {
         transform: rotate(360deg);
     }
 }
+
 @keyframes loading-circle-ani {
     0% {
         stroke-dashoffset: 300;
     }
-    66% {
-        stroke-dashoffset: -237;
+    70% {
+        stroke-dashoffset: -207;
     }
     100% {
         stroke-dashoffset: -300;
     }
 }
+
 .global-nav {
     position: fixed;
     background: #000;
@@ -27,6 +29,7 @@ html {
     box-shadow: 2px 0px 10px #000;
     color: #fff;
 }
+
 .name {
     margin-top: 20%;
     margin-left: 10%;
@@ -34,12 +37,14 @@ html {
     font-weight: 600;
     font-size: 1.1em;
 }
+
 .list li {
     margin-top: 15%;
     margin-left: 10%;
     font-weight: 600;
     font-size: 1.4em;
 }
+
 .list .current-section {
     width: 8px;
     height: 8px;
@@ -47,67 +52,78 @@ html {
     margin-top: 2%;
     background: black;
 }
+
 .section {
     display: flex;
     flex-direction: column;
     float: right;
     width: 73%;
 }
+
 .container {
     box-sizing: border-box;
-    border-bottom: 1px solid rgba(0,0,0,.2);
+    border-bottom: 1px solid rgba(0, 0, 0, .2);
 }
+
 .loading-circle {
     width: 106px;
     height: 106px;
     animation: loading-spin 1.5s infinite;
 }
+
 .loading-circle circle {
     stroke: black;
     stroke-width: 4;
     fill: transparent;
     stroke-dasharray: 300;
     stroke-dashoffset: -300;
-    animation: loading-circle-ani 2s infinite;
+    animation: loading-circle-ani 2.3s infinite;
 }
+
 .container-0 {
     display: flex;
     justify-content: center;
 }
+
 .container-0 .copyright {
     position: absolute;
     font-weight: 550;
     top: 2%;
 }
+
 .container-0 .svg-circle {
     width: 100%;
     height: 100%;
-    background: rgba(0,0,0,.05);
+    background: rgba(0, 0, 0, .05);
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
 .container-0 .circle-center {
     position: absolute;
     font-size: 2em;
     font-weight: 600;
     animation: loading-spin 1.5s infinite;
 }
+
 .container-1 .intro {
     margin-left: 5%;
     display: grid;
     grid-template-columns: 420px 1fr;
 }
+
 .container-1 .intro .picture {
     width: 420px;
     height: 600px;
-    border-radius:  0 15px 0 15px;
+    border-radius: 0 15px 0 15px;
     background-size: cover;
     background-repeat: no-repeat;
     display: block;
     background: url("../img/profile.png");
     box-shadow: 2px 2px 4px 5px #000;
 }
+
 .container-1 h1 {
     width: 20%;
     margin-top: 10%;
@@ -117,6 +133,7 @@ html {
     font-weight: 600;
     font-size: 2em;
 }
+
 .container-1 p {
     margin-top: 1vh;
     margin-left: 30px;
@@ -124,9 +141,11 @@ html {
     font-size: 1.2em;
     line-height: 4;
 }
+
 .container-2 {
-    background: rgba(0,0,0,.05);
+    background: rgba(0, 0, 0, .05);
 }
+
 .container-2 h1 {
     width: 20%;
     margin-top: 10%;
@@ -136,11 +155,13 @@ html {
     font-weight: 600;
     font-size: 2em;
 }
+
 .container-2 .grid-container {
     margin-left: 5%;
     display: grid;
     grid-template-columns: 120px 1fr;
 }
+
 .container-2 .grid-container .html5 {
     margin-top: 20px;
     width: 120px;
@@ -148,6 +169,7 @@ html {
     background-size: cover;
     background: url("../img/html.png")
 }
+
 .container-2 .grid-container .css3 {
     margin-top: 20px;
     width: 120px;
@@ -155,6 +177,7 @@ html {
     background-size: cover;
     background: url("../img/css.png")
 }
+
 .container-2 .grid-container .js {
     margin-top: 20px;
     width: 120px;
@@ -162,6 +185,7 @@ html {
     background-size: cover;
     background: url("../img/js.png")
 }
+
 .container-2 .grid-container .ps {
     margin-top: 20px;
     width: 120px;
@@ -169,6 +193,7 @@ html {
     background-size: cover;
     background: url("../img/ps.png")
 }
+
 .container-2 .grid-container p {
     height: 120px;
     display: flex;
@@ -178,8 +203,9 @@ html {
     font-size: 1.2em;
     line-height: 1.5;
 }
-.container-3 {
-}
+
+.container-3 {}
+
 .container-3 h1 {
     width: 20%;
     margin-top: 10%;
@@ -189,22 +215,31 @@ html {
     font-weight: 600;
     font-size: 2em;
 }
+
 .container-3 .portfolio-0 {
-    margin-left: 5%;
-    display: grid;
-    grid-template-columns: 450px 1fr;
+    display: flex;
+    height: 100vh;
 }
+
 .container-3 .portfolio-0-img {
     width: 450px;
     height: 600px;
-    background: url("../img/patchworkportfolio.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url("../img/patchworkportfolio.png");
 }
+
 .container-3 .portfolio-1 {
-    margin-left: 5%;
-    display: grid;
-    grid-template-columns: 450px 1fr;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
+
 .container-3 .portfolio-1-img {
-    width: 450px;
-    height: 600px;
-    background: url("../img/solarSystemportfolio.png");
+    margin-left: 10px;
+    width: 732px;
+    height: 345px;
+    background-size: cover;
+    background-image: url("../img/solarsystem.gif");
+}

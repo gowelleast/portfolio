@@ -86,6 +86,7 @@
         });
     }
 })(window, document)
+
 // (function () {
 //     const leftbtn = document.querySelector('.left-btn');
 //     const rightbtn = document.querySelector('.right-btn');
