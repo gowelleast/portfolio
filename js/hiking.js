@@ -26,8 +26,8 @@
 				videoImages: []
 			},
 			values: {
-				videoImageCount: 663,
-				imageSequence: [0, 662],
+				videoImageCount: 500,
+				imageSequence: [0, 499],
 				canvas_opacity: [1, 0, { start: 0.9, end: 1 }],
 				messageA_opacity_in: [0, 1, { start: 0.1, end: 0.2 }],
 				messageB_opacity_in: [0, 1, { start: 0.3, end: 0.4 }],
@@ -72,8 +72,8 @@
 				videoImages: []
 			},
 			values: {
-				videoImageCount: 859,
-				imageSequence: [0, 858],
+				videoImageCount: 500,
+				imageSequence: [0, 499],
 				canvas_opacity_in: [0, 1, { start: 0, end: 0.1 }],
 				canvas_opacity_out: [1, 0, { start: 0.95, end: 1 }],
 				messageA_translateY_in: [20, 0, { start: 0.15, end: 0.2 }],
