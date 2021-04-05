@@ -67,6 +67,7 @@ html {
 }
 
 .list li {
+    cursor: pointer;
     margin-top: 15%;
     margin-left: 10%;
     font-weight: 600;
