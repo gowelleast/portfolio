@@ -1,0 +1,8 @@
+.global-nav {
+    width: 0%;
+    display: none;
+}
+.section {
+    float: none;
+    width: 100%;
+}

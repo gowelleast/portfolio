@@ -1,0 +1,87 @@
+.container-0 .copyright {
+    font-size: 0.5em;
+}
+
+.container-1 .intro {
+    margin-left: 5%;
+    display: grid;
+    grid-template-columns: 170px 1fr;
+}
+
+.container-1 .intro .picture {
+    width: 160px;
+    height: 300px;
+}
+.container-1 h1 {    
+    font-size: 1em;
+}
+.container-1 p {
+    margin-right: 25px;
+    font-weight: 600;
+    font-size: 0.7em;
+    line-height: 1.8;
+}
+
+
+.container-2 h1 {
+    font-size: 0.8em;
+}
+
+.container-2 .grid-container p {
+    font-size: 1em;
+    
+}
+
+.container-3 h1 {
+    font-size: 1em;
+}
+.container-3 .portfolio-0-img {
+    margin-left: 20px;
+    width: 300px;
+    height: 400px;
+    background-image: url("../img/patchworkportfolio.png");
+}
+.container-3 .portfolio-0 {
+    flex-direction: column;
+}
+.container-3 .portfolio-0 .introduce {
+    margin-left: 15px;
+    margin-bottom: 80px;
+    font-size: 12px;
+}
+.container-3 .portfolio-0 .introduce h2 p {
+    font-size: 15px;
+}
+
+.container-3 .portfolio-1 {
+}
+.container-3 .portfolio-1 .introduce {
+    margin-left: 15px;
+    margin-bottom: 80px;
+    font-size: 12px;
+}
+.container-3 .portfolio-1 .introduce h2 p {
+    font-size: 15px;
+}
+.container-3 .portfolio-1-img {
+    margin-left: 10px;
+    width: 364px;
+    height: 207px;
+    background-size: cover;
+    background-image: url("../img/solarsystem.gif");
+    margin-bottom: 10px;
+}
+
+.container-3 .portfolio-2 .introduce {
+    font-size: 12px;
+}
+.container-3 .portfolio-2 .introduce h2 p {
+    font-size: 15px;
+}
+.container-3 .portfolio-2-img {
+    margin-left: 10px;
+    width: 364px;
+    height: 207px;
+    background-size: cover;
+    background-image: url("../img/hiking.gif");
+}

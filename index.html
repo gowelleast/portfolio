@@ -7,8 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="./css/portfolio.css">
+    <link rel="stylesheet" media="(max-width: 1024px)" href="./css/portfolio_medium.css">
+    <link rel="stylesheet" media="(max-width: 768px)" href="./css/portfolio_small.css">
     <link rel="stylesheet" href="./css/reset.css">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;900&display=swap" rel="stylesheet">
+
     <script src="./js/portfolio.js" defer></script>
     <title>Portfolio</title>
 
@@ -38,11 +41,11 @@
                 <h2 class="circle-center">HD</h2>
             </div>
         </div>
-        <div class="container container-1" id="scroll-section-1">
+        <div class="container container-1">
             <h1>About me</h1>
             <div class="intro">
                 <div class="picture"></div>
-                <p>
+                <p><br>
                     안녕하세요. <br>
                     훌륭한 웹 퍼블리셔가 되고 싶은 김형동입니다.<br>
                     저는 웹 사이트를 제작할 때 소비자와 생산자 모두에게 <br>실용적인 서비스를 제공하려 노력합니다.<br>
@@ -50,40 +53,51 @@
                 </p>
             </div>
         </div>
-        <div class="container container-2" id="scroll-section-2">
+        <div class="container container-2">
             <h1>What Can I Do</h1>
             <div class="grid-container">
                 <div class="html5"></div>
                 <p>HTML5</p>
                 <div class="css3"></div>
                 <p>CSS3<br>
-                반응형 레이아웃</p>
+                    반응형 레이아웃</p>
                 <div class="js"></div>
                 <p>Vanilla JavaScript</p>
                 <div class="ps"></div>
                 <p>GTQ 포토샵 1급 보유</p>
             </div>
         </div>
-        <div class="container container-3" id="scroll-section-3">
+        <div class="container container-3">
             <h1>Portfolio</h1>
             <div class="portfolio-0">
                 <div class="portfolio-0-img"></div>
                 <div class="introduce">
-                    <h2><p>01</p>가상의 브랜드 홈페이지</h2>
-                    <p>패치워크라는 가상의 브랜드의 홈페이지를 반응형 웹페이지입니다.</p>
-                    <a href="./patchwork.html">패치워크</a>
+                    <h2>
+                        <p>01</p><br>가상의 도메스틱 의류 브랜드 홈페이지
+                    </h2>
+                    <p>패치워크라는 가상의 브랜드 홈페이지 반응형 웹페이지입니다.</p>
+                    <a href="./patchwork.html" class="linkBtn" target="_blank">새창에서 열기</a>
                 </div>
             </div>
             <div class="portfolio-1">
                 <div class="portfolio-1-img"></div>
                 <div class="introduce">
-                    <h2><p>02</p>태양계 교육용 웹페이지</h2>
-                    <p>휠에 반응하여 3D로 움직이고 마우스 커서 위치에 따라 시점이 변하는 웹페이지입니다.</p>
-                    <a href="./solarSystem.html">태양계</a>
+                    <h2>
+                        <p>02</p><br>태양계 교육용 웹페이지
+                    </h2>
+                    <p>스크롤에 반응하여 3D로 움직이고 마우스 커서 위치에 따라 시점이 변하는 웹페이지입니다.</p>
+                    <a href="./solarSystem.html" class="linkBtn" target="_blank">새창에서 열기</a>
                 </div>
             </div>
             <div class="portfolio-2">
-                <a href="./hiking.html">하이킹스노우</a>
+                <div class="portfolio-2-img"></div>
+                <div class="introduce">
+                    <h2>
+                        <p>03</p><br>가상의 하이킹 가이드 웹페이지
+                    </h2>
+                    <p>스크롤에 반응하여 백그라운드의 이미지가 동영상처럼 움직이는 반응형 웹페이지입니다.</p>
+                    <a href="./hiking.html" class="linkBtn" target="_blank">새창에서 열기</a>
+                </div>
             </div>
         </div>
     </section>
