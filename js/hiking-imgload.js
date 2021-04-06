@@ -68,8 +68,6 @@
 				messageA: document.querySelector('#scroll-section-2 .a'),
 				messageB: document.querySelector('#scroll-section-2 .b'),
 				messageC: document.querySelector('#scroll-section-2 .c'),
-				pinB: document.querySelector('#scroll-section-2 .b .pin'),
-				pinC: document.querySelector('#scroll-section-2 .c .pin'),
 				canvas: document.querySelector('#video-canvas-1'),
 				context: document.querySelector('#video-canvas-1').getContext('2d'),
 				videoImages: []
@@ -91,8 +89,6 @@
 				messageA_opacity_out: [1, 0, { start: 0.4, end: 0.45 }],
 				messageB_opacity_out: [1, 0, { start: 0.68, end: 0.73 }],
 				messageC_opacity_out: [1, 0, { start: 0.95, end: 1 }],
-				pinB_scaleY: [0.5, 1, { start: 0.6, end: 0.65 }],
-				pinC_scaleY: [0.5, 1, { start: 0.87, end: 0.92 }]
 			},
 			finishedLoadingImages: false
 		},
@@ -377,24 +373,20 @@
 					// in
 					objs.messageB.style.transform = `translate3d(0, ${calcValues(values.messageB_translateY_in, currentYOffset)}%, 0)`;
 					objs.messageB.style.opacity = calcValues(values.messageB_opacity_in, currentYOffset);
-					objs.pinB.style.transform = `scaleY(${calcValues(values.pinB_scaleY, currentYOffset)})`;
 				} else {
 					// out
 					objs.messageB.style.transform = `translate3d(0, ${calcValues(values.messageB_translateY_out, currentYOffset)}%, 0)`;
 					objs.messageB.style.opacity = calcValues(values.messageB_opacity_out, currentYOffset);
-					objs.pinB.style.transform = `scaleY(${calcValues(values.pinB_scaleY, currentYOffset)})`;
 				}
 
 				if (scrollRatio <= 0.93) {
 					// in
 					objs.messageC.style.transform = `translate3d(0, ${calcValues(values.messageC_translateY_in, currentYOffset)}%, 0)`;
 					objs.messageC.style.opacity = calcValues(values.messageC_opacity_in, currentYOffset);
-					objs.pinC.style.transform = `scaleY(${calcValues(values.pinC_scaleY, currentYOffset)})`;
 				} else {
 					// out
 					objs.messageC.style.transform = `translate3d(0, ${calcValues(values.messageC_translateY_out, currentYOffset)}%, 0)`;
 					objs.messageC.style.opacity = calcValues(values.messageC_opacity_out, currentYOffset);
-					objs.pinC.style.transform = `scaleY(${calcValues(values.pinC_scaleY, currentYOffset)})`;
 				}
 
 				// currentScene 3에서 쓰는 캔버스를 미리 그려주기 시작
