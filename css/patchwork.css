@@ -113,8 +113,8 @@ header .sub-menu li a {
 }
 .banner-section {
     margin: 0px auto 0px;
-    width: 980px;
-    height: 550px;
+    width: 100%px;
+    height: 600px;
     background: black;
     overflow: hidden;
     position: relative;
@@ -156,22 +156,30 @@ header .sub-menu li a {
 }
 .banner1 {
     background-position: center;
-    background: url("../img/BANNER1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("../img/BANNER1.png");
 }
 .banner2 {
     left: 100%;
     background-position: center;
-    background: url("../img/BANNER2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("../img/BANNER2.png");
 }
 .banner3 {
     left: 200%;
     background-position: center;
-    background: url("../img/BANNER3.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("../img/BANNER3.png");
 }
 .banner4 {
     left: 300%;
     background-position: center;
-    background: url("../img/BANNER4.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("../img/BANNER4.png");
 }
 .container_2 {
     margin-top: 80px;
