@@ -33,7 +33,6 @@
     });
 
     window.addEventListener('scroll', () => {
-        console.log(window.pageYOffset)
         if (window.pageYOffset < section0.offsetHeight) {
             currentSection[0].style.background = 'white';
             currentSection[1].style.background = 'black';
@@ -56,5 +55,10 @@
             currentSection[3].style.background = 'white';
         }
     })
-
+    window.addEventListener('orientationchange', () => {
+        scrollTo(0, 0);
+        setTimeout(() => {
+            window.location.reload();
+        }, 500);
+      });
 })();

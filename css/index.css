@@ -32,8 +32,6 @@ a {
     margin: 0 auto;
 }
 
-
-
 .current-list {
     color: rgb(29, 29, 21);
     cursor: pointer;
@@ -436,7 +434,10 @@ a {
     font-size: 38px;
     font-weight: 900;
 }
-
+.work-description2 {
+    font-size: 17px;
+    font-weight: 600;
+}
 .work-description {
     font-size: 17px;
     font-weight: 600;
@@ -447,16 +448,6 @@ a {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 30px;
-}
-
-.section-3::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    background: linear-gradient(to top, rgba(29, 118, 249, 0.47), rgba(255, 255, 255, 0.1) 5%, rgba(255, 255, 255, 0));
 }
 
 .section-3 .work {
@@ -532,6 +523,77 @@ a {
     padding: 0 6px;
 }
 
+.section-4 {
+    position: relative;
+    height: 1280px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-4::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: linear-gradient(to top, rgba(29, 118, 249, 0.47), rgba(255, 255, 255, 0.1) 5%, rgba(255, 255, 255, 0));
+}
+
+
+
+.section-4 .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 30px;
+}
+
+.section-4 .logo-1 {
+    width: 280px;
+    height: 250px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("../img/DBTI.png");
+}
+
+.section-4 .logo-2 {
+    width: 280px;
+    height: 250px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("../img/doyouknowthismusic.png");
+}
+
+.section-4 .logo-3 {
+    width: 390px;
+    height: 250px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("../img/Duckpop.png");
+}
+
+.section-4 .logo-4 {
+    width: 250px;
+    height: 250px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("../img/nostudynorice.png");
+}
+.section-4 .logo-5 {
+    width: 300px;
+    height: 250px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("../img/dequiz.png");
+}
+.section-4 .logo-6 {
+    width: 390px;
+    height: 230px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("../img/stargram2.png");
+}
 .footer {
     display: flex;
     justify-content: center;
