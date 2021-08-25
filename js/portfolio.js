@@ -55,10 +55,7 @@
             currentSection[3].style.background = 'white';
         }
     })
-    window.addEventListener('orientationchange', () => {
-        scrollTo(0, 0);
-        setTimeout(() => {
-            window.location.reload();
-        }, 500);
+    window.addEventListener('load', () => {
+        scrollTo(0, window.pageYOffset+1);
       });
 })();
